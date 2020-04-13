@@ -14,6 +14,5 @@ export default class mainWeatherInfo extends React.Component {
 const styles = StyleSheet.create({
   mainViewStyle: {
     flex: 3,
-    backgroundColor: '#fff',
   },
 });

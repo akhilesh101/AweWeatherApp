@@ -13,7 +13,6 @@ export default class weeklyWeatherInfo extends React.Component {
 
 const styles = StyleSheet.create({
   mainViewStyle: {
-    flex: 2,
-    backgroundColor: '#2607EC',
+    flex: 2
   },
 });

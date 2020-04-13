@@ -13,7 +13,6 @@ export default class hourlyWeatherInfo extends React.Component {
 
 const styles = StyleSheet.create({
   mainViewStyle: {
-    flex: 2,
-    backgroundColor: '#BF6E0A',
+    flex: 2
   },
 });

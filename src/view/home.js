@@ -1,7 +1,9 @@
 import React from 'react';
-import {Container, Text} from 'native-base';
-import {StyleSheet,View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import MainWeatherInfoComponent from '../components/mainWeatherInfo';
+import HourlyWeatherInfoComponent from '../components/hourlyWeatherInfo';
+import WeeklyWeatherInfoComponent from '../components/weeklyWeatherInfo';
 export default class home extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +17,9 @@ export default class home extends React.Component {
         style={styles.linearGradientStyle}
         colors={['#044c34', '#09ab76', '#22c590']}>
         <View style={styles.containerStyle}>
-          <Text style={styles.textStyle}>You landed on the home page.</Text>
+          <MainWeatherInfoComponent />
+          <HourlyWeatherInfoComponent />
+          <WeeklyWeatherInfoComponent />
         </View>
       </LinearGradient>
     );
@@ -24,12 +28,11 @@ export default class home extends React.Component {
 
 const styles = StyleSheet.create({
   containerStyle: {
-    flex:1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1,
   },
 
   textStyle: {
+    justifyContent: 'center',
     color: '#ffffff',
     fontWeight: 'bold',
     fontFamily: 'Roboto',
@@ -37,6 +40,6 @@ const styles = StyleSheet.create({
   },
 
   linearGradientStyle: {
-    flex:1
+    flex: 1,
   },
 });
